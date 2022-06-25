@@ -31,7 +31,7 @@ header {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  height: 3.5rem;
+  height: 5rem;
   width: 100%;
   background: #fafafa;
 }
@@ -55,13 +55,19 @@ header .container {
   background: #fafafa;
 }
 header .container > .logo {
-  height: 1rem;
-  padding-bottom: 0.8rem;
+  height: 6rem;
+  width: 6rem;
 }
 header .container > .logo img {
   width: 6rem;
   height: 6rem;
-  padding-bottom: 2.5rem;
+  padding-bottom: 4rem;
+}
+header .container .wrap div {
+  width: 80%;
+  position: relative;
+  display: flex;
+  left: 32%;
 }
 header .container .wrap input {
   width: 90%;
@@ -78,7 +84,7 @@ header .container .wrap input:focus {
   color: rgb(43, 44, 44);
 }
 header .container .wrap button {
-  width: 60px;
+  width: 160px;
   height: 46px;
   border: 4px 5px 5px 5px solid rgb(119, 119, 119);
   background: rgb(238, 238, 238);
@@ -221,8 +227,8 @@ header .container .menu div.buttons > * {
     justify-content: flex-start;
     border: none;
   }
-  header .container .logo {
-    padding-bottom: 3rem;
+  header .container .logo img {
+    margin-bottom: 10rem;
   }
 
   input.hamburger-button ~ label {
@@ -274,6 +280,9 @@ header .container .menu div.buttons > * {
   header {
     height: 3.5rem;
   }
+  header .container .logo img {
+    padding-bottom: 0.01rem;
+  }
 
   header .container .menu {
     box-sizing: border-box;
@@ -309,5 +318,10 @@ header .container .menu div.buttons > * {
     width: -moz-max-content;
     width: max-content;
     padding: 1.25rem 1.5rem;
+  }
+}
+@media (max-width: 1040px) {
+  header .container .logo img {
+    padding-bottom: 2rem;
   }
 }/*# sourceMappingURL=header.css.map */

@@ -45,7 +45,7 @@ a {
 header {
     position: sticky;
     top: 0;
-    height: 3.5rem;
+    height: 5rem;
     width: 100%;
     background: $color_background;
 }
@@ -68,14 +68,21 @@ header .container {
     background: $color_background;
 
     & > .logo {
-        height: 1rem;
-        padding-bottom: 0.8rem;
+        height: 6rem;
+        width: 6rem;
 
         img{
             width: 6rem;
             height: 6rem;
-            padding-bottom: 2.5rem;
+            padding-bottom: 4rem;
         }
+    }
+
+    .wrap div {
+        width: 80%;
+        position: relative;
+        display: flex;
+        left: 32%;
     }
 
     .wrap input {
@@ -95,7 +102,7 @@ header .container {
       }
     
     .wrap button {
-        width: 60px;
+        width: 160px;
         height: 46px;
         border: 4px 5px 5px 5px solid rgb(119, 119, 119);
         background: rgb(238, 238, 238);
@@ -265,7 +272,9 @@ header .container .menu {
         border: none;
 
         .logo{
-            padding-bottom: 3rem;
+            img{
+                margin-bottom: 10rem;
+            }
         }
     }
 
@@ -322,6 +331,10 @@ header .container .menu {
 @media only screen and (min-width: $breakpoint_desktop) {
     header {
         height: 3.5rem;
+
+        .container .logo img {
+            padding-bottom: 0.01rem;
+        }
     }
 
     header .container .menu {
@@ -361,4 +374,14 @@ header .container .menu {
         }
     }
 
+}
+
+@media(max-width: 1040px) {
+    header .container{
+        .logo{
+            img{
+            padding-bottom: 2rem;
+            }
+        }
+    }
 }
