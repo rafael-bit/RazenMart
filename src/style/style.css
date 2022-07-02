@@ -1,0 +1,104 @@
+.slider {
+  margin: 5% auto;
+  max-width: 70%;
+}
+
+.slide_viewer {
+  height: 440px;
+  overflow: hidden;
+  position: relative;
+}
+
+.slide_group {
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+
+.slide {
+  display: none;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+.slide:first-child {
+  display: block;
+}
+
+.slide:nth-of-type(1) {background-image: url("../assets/img.webp");}
+.slide:nth-of-type(2) {background-image: url("../assets/img2.webp");}
+.slide:nth-of-type(3) {background-image: url("../assets/img3.webp");}
+.slide:nth-of-type(4) {background-image: url("../assets/img4.webp");}
+
+.slide_buttons {
+  left: 0;
+  position: absolute;
+  right: 0;
+  text-align: center;
+}
+
+a.slide_btn {
+  color: #474544;
+  font-size: 42px;
+  margin: 0 0.175em;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.slide_btn.active, .slide_btn:hover {
+  color: #428CC6;
+  cursor: pointer;
+}
+
+.directional_nav {
+  height: 340px;
+  margin: 0 auto;
+  max-width: 940px;
+  position: relative;
+  top: -340px;
+}
+
+@media (max-width: 980px) {
+  a.slide_btn {
+    font-size: 30px;
+  }
+  .slide_viewer{
+    height: 120px;
+  }
+
+  .slide:nth-of-type(1) {background-repeat: no-repeat; background-size: 100%;}
+  .slide:nth-of-type(2) {background-repeat: no-repeat; background-size: 100%;}
+  .slide:nth-of-type(3) {background-repeat: no-repeat; background-size: 100%;}
+  .slide:nth-of-type(4) {background-repeat: no-repeat; background-size: 100%;}
+}
+
+@media (max-width: 679px){
+  .slide:nth-of-type(1) {background-repeat: no-repeat; background-size: 150%;}
+  .slide:nth-of-type(2) {background-repeat: no-repeat; background-size: 150%;}
+  .slide:nth-of-type(3) {background-repeat: no-repeat; background-size: 150%;}
+  .slide:nth-of-type(4) {background-repeat: no-repeat; background-size: 150%;}
+}
+
+.container-grid ul{
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(125px, .7fr));
+  row-gap: 2.5rem;
+}
+
+.grid-list{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon-box{
+  background: #428CC6;
+  border-radius: 50%;
+  padding: 25px;
+}
